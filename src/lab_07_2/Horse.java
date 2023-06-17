@@ -2,7 +2,7 @@ package lab_07_2;
 
 import java.security.SecureRandom;
 
-public class Horse extends Animal{
+public class Horse extends Animal {
 
     @Override
     public int getSpeed() {

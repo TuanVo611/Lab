@@ -6,16 +6,14 @@ import java.util.Scanner;
 
 public class Lab_07_01 {
     public static void main(String[] args) {
-        Employee fullTimeEmployee = new Employee();
-        Employee contractEmployee = new Employee();
+        Employee fullTimeEmployee = new FTE();
+        Employee contractEmployee = new Contractor();
         SalaryController employeeController = new SalaryController();
-        fullTimeEmployee.setSalary(50000);
-        contractEmployee.setSalary(40000);
         List<Employee> employeeList = new ArrayList<>();
         System.out.println("Nhập số nhân viên FTE:");
         Scanner scanner = new Scanner(System.in);
         int numberFTE = scanner.nextInt();
-        System.out.println("Nhập số nhân viên FTE:");
+        System.out.println("Nhập số nhân viên Contractor:");
         int numberContractor = scanner.nextInt();
         for (int i = 0; i < numberFTE; i++) {
             employeeList.add(fullTimeEmployee);

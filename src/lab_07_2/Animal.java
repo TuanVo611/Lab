@@ -15,6 +15,7 @@ public class Animal {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
     @Override
     public String toString() {
         return "Animal{" +
